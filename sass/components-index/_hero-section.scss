@@ -1,0 +1,46 @@
+.hero-section {
+  max-width: 1600px;
+  min-height: 600px;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+}
+
+.hero-container {
+  width: 1200px;
+
+  display: block;
+  align-items: center;
+  text-align: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 94px;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  .hero-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+
+    color: $aditional-text-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    /* or 136% */
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
+
+// Order button

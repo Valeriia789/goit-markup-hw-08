@@ -1,0 +1,21 @@
+// Utilits
+@import "./utils/variables";
+@import "./utils/base";
+
+// Common
+@import "./common/buttons";
+@import "./common/header";
+@import "./common/footer";
+
+// Index.html Components
+@import "./components-index/hero-section";
+@import "./components-index/features-section";
+@import "./components-index/doings-section";
+@import "./components-index/page-title";
+@import "./components-index/team-section";
+@import "./components-index/customers-section";
+@import "./components-index/backdrop-popup";
+
+// Portfolio Components
+@import "./components-portfolio/buttons-container";
+@import "./components-portfolio/portfolio-card-container";
