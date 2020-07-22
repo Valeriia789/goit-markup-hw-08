@@ -585,7 +585,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .features-container {
-    width: desktop;
+    width: 1200px;
     margin-bottom: 94px;
   }
 }

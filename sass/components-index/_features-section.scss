@@ -6,21 +6,21 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: $mobile) {
-    width: $mobile;
+  @media screen and (min-width: 480px) {
+    width: 480px;
   
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
+  @media screen and (min-width: 768px) {
+    width: 768px;
 
     display: flex;
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: $desktop) {
-    width: desktop;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
 
     margin-bottom: 94px;
   }
@@ -29,15 +29,15 @@
 .features-list{
   margin: 0px;
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: 480px) {
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
     display: inline-flex;
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
   }
 
 }
@@ -45,15 +45,15 @@
 .feachers-item {
   align-items: center;
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: 480px) {
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
     width: 50%;
     display: block;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
     width: 25%;
   }
 }
@@ -82,13 +82,13 @@
 
   background-color: transparent;
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: 480px) {
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
   }
 
 }
@@ -105,15 +105,15 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: 480px) {
     text-align: center;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
     text-align: left;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
   }
 
 }
@@ -128,13 +128,13 @@
   line-height: 24px;
   letter-spacing: 0.03em;
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: 480px) {
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
   }
 
 }
