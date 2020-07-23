@@ -1,47 +1,47 @@
-body {
-  align-items: center;
-  justify-content: center;
-}
+// body {
+//   align-items: center;
+//   justify-content: center;
+// }
 
-main {
-  font-family: $font-main;
-}
+// main {
+//   font-family: $font-main;
+// }
 
-ul {
-  list-style: none;
-  text-decoration-line: none;
-  padding: 0px;
-  margin: 0px;
-}
+ ul {
+   list-style: none;
+   text-decoration-line: none;
+   padding: 0px;
+   margin: 0px;
+ }
 
-a {
-  margin: 0px;
+// a {
+//   margin: 0px;
 
-  text-decoration-line: none;
-  text-decoration: none;
-  color: $aditional-text-color;
-}
+//   text-decoration-line: none;
+//   text-decoration: none;
+//   color: $aditional-text-color;
+// }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0px;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   margin: 0px;
+// }
 
-p {
-  margin: 0px;
-}
+// p {
+  // margin: 0px;
+// }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0px;
-  padding: 0px;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+// .visually-hidden {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   border: 0px;
+//   padding: 0px;
+//   clip: rect(0 0 0 0);
+//   overflow: hidden;
+// }

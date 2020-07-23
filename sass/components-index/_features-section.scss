@@ -1,228 +1,113 @@
 .features-container {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-
+  // For mobile devices
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: 480px) {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+
+  background-color: pink;
+
+  @media screen and (min-width: $mobile) {
+    // For tablet devices
     width: 480px;
-  
-    margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
+    // For small desktop devices
     width: 768px;
+  }
 
+  @media screen and (min-width: $desktop) {
+    // For large desktop devices
+    width: 1200px;
+  }
+}
+
+.features-list {
+  margin-top: 0px;
+
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
   }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-
-    margin-bottom: 94px;
-  }
-}
-
-.features-list{
-  margin: 0px;
-
-  @media screen and (min-width: 480px) {
-  }
-
-  @media screen and (min-width: 768px) {
-    display: inline-flex;
-    flex-wrap: wrap;
-  }
-
-  @media screen and (min-width: 1200px) {
-  }
-
 }
 
 .feachers-item {
-  align-items: center;
+  width: 100%;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile) {
+    // For tablet devices
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
+    // For small desktop devices
     width: 50%;
-    display: block;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
+    // For large desktop devices
     width: 25%;
   }
-}
 
-.feachers-icon-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .feachers-icon-container {
+    height: 120px;
 
-  height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  margin-top: 0px;
-  margin-bottom: 30px;
-  
-  border-radius: 4px;
-  background-position: center;
-  background-color: $section-background-color;
-}
+    margin-top: 0px;
+    margin-bottom: 30px;
 
-.feachers-icon {
-  width: 70px;
-  height: 70px;
+    border-radius: 4px;
+    background-position: center;
+    background-color: $section-background-color;
 
-  align-items: center;
-  justify-content: center;
+    .feachers-icon {
+      width: 70px;
+      height: 70px;
 
-  background-color: transparent;
-
-  @media screen and (min-width: 480px) {
+      background-color: transparent;
+      /*
+      transform: translate3d(0px, 0px, 0px) 5000ms cubic-bezier(.52,.23,.18,.84);
+      transition: transform;
+      */
+    }
   }
 
-  @media screen and (min-width: 768px) {
-  }
+  .features-title {
+    margin-top: 0px;
+    margin-bottom: 10px;
 
-  @media screen and (min-width: 1200px) {
-  }
-
-}
-
-.features-title {
-  margin-top: 0px;
-  margin-bottom: 10px;
-
-  color: $title-text-color;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  @media screen and (min-width: 480px) {
+    color: $title-text-color;
+    font-family: $font-main;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      // For small desktop devices
+      text-align: start;
+    }
   }
 
-  @media screen and (min-width: 768px) {
-    text-align: left;
-  }
+  .features-text {
+    margin-top: 0px;
 
-  @media screen and (min-width: 1200px) {
-  }
+    color: $primary-text-color;
+    font-family: $font-main;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
 
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
-
-.features-text {
-  margin: 0px;
-
-  color: $primary-text-color;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-
-  @media screen and (min-width: 480px) {
-  }
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1200px) {
-  }
-
-}
-
-// .features-container {
-//   width: 1200px;
-
-//   display: flex;
-//   align-items: center;
-//   flex-wrap: wrap;
-
-//   margin-left: auto;
-//   margin-right: auto;
-//   margin-top: 0px;
-//   margin-bottom: 94px;
-
-//   padding-left: 15px;
-//   padding-right: 15px;
-
-//   .features-list {
-//     display: inline-flex;
-//     flex-wrap: wrap;
-
-//     margin-top: 0px;
-//     margin-bottom: 30px;
-
-//     .feachers-item + .feachers-item {
-//       margin-left: 30px;
-//     }
-//   }
-// }
-
-// .feachers-item {
-//   display: block;
-//   align-items: center;
-//   width: 270px;
-
-//   .feachers-icon-container {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-
-//     height: 120px;
-//     width: 270px;
-
-//     margin-top: 0px;
-//     margin-bottom: 30px;
-
-//     border-radius: 4px;
-//     background-position: center;
-//     background-color: $section-background-color;
-
-//     .feachers-icon {
-//       width: 70px;
-//       height: 70px;
-
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       background-color: transparent;
-//       /*
-//       transform: translate3d(0px, 0px, 0px) 5000ms cubic-bezier(.52,.23,.18,.84);
-//       transition: transform;
-//       */
-//     }
-//   }
-
-//   .features-title {
-//     margin-top: 0px;
-//     margin-bottom: 10px;
-
-//     color: $title-text-color;
-//     font-style: normal;
-//     font-weight: bold;
-//     font-size: 14px;
-//     line-height: 16px;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//   }
-
-//   .features-text {
-//     margin: 0px;
-
-//     color: $primary-text-color;
-//     font-style: normal;
-//     font-weight: normal;
-//     font-size: 14px;
-//     line-height: 24px;
-//     letter-spacing: 0.03em;
-//   }
-// }

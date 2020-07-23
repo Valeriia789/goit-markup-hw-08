@@ -1,4 +1,5 @@
 // Utilits
+@import "./utils/breakpoints";
 @import "./utils/variables";
 @import "./utils/base";
 
@@ -8,13 +9,7 @@
 @import "./common/footer";
 
 // Index.html Components
-@import "./components-index/hero-section";
-@import "./components-index/features-section";
-@import "./components-index/doings-section";
-@import "./components-index/page-title";
-@import "./components-index/team-section";
-@import "./components-index/customers-section";
-@import "./components-index/backdrop-popup";
+@import "./components-index/index-components";
 
 // Portfolio Components
 @import "./components-portfolio/buttons-container";
