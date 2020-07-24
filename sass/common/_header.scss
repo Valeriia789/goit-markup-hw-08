@@ -30,4 +30,9 @@
   top: 100%;
   left: 0;
   width: 100%;
+
+  &.is-open {
+    display: block;
+  }
+  
 }

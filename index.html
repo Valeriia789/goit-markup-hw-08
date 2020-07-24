@@ -18,14 +18,14 @@
         <nav class="site-nav-container">
           <a href="#"><img src="./images/WebStudio.jpg" class="logo-link" alt="Web Studio" /></a>
 
-          <button type="button" class="mobile-menu-button is-open" aria-expanded="false" data-menu-button>
+          <button type="button" class="mobile-menu-button is-open" aria-expanded="false" aria-controls="nav-address-container" data-menu-button>
             <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
               <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+              <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
             </svg>
           </button>
 
-          <div class="nav-address-container">
+          <div class="nav-address-container" id="nav-address-container" data-menu>
             <ul class="site-nav">
               <li class="site-nav-item"><a href="./index.html" class="site-nav-link-current">Студия</a></li>
               <li class="site-nav-item"><a href="./portfolio.html" class="site-nav-link">Портфолио</a></li>

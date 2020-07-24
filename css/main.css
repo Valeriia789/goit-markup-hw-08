@@ -41,6 +41,10 @@ ul {
   width: 100%;
 }
 
+.nav-address-container.is-open {
+  display: block;
+}
+
 .features-container {
   padding-left: 15px;
   padding-right: 15px;
