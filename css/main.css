@@ -7,6 +7,40 @@ ul {
   margin: 0px;
 }
 
+.mobile-menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-menu-button .icon-cross {
+  display: none;
+}
+
+.mobile-menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.mobile-menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.header {
+  position: relative;
+}
+
+.nav-address-container {
+  background-color: pink;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
 .features-container {
   padding-left: 15px;
   padding-right: 15px;

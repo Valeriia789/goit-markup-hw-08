@@ -1,0 +1,33 @@
+.mobile-menu-button {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+
+  & .icon-cross {
+    display: none;
+  }
+
+  &.is-open {
+    .icon-cross {
+      display: block;
+    }
+
+    .icon-menu {
+      display: none;
+    }
+  }
+}
+
+.header {
+  position: relative;
+}
+
+.nav-address-container {
+  background-color: pink;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
