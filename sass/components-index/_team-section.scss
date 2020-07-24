@@ -1,0 +1,63 @@
+.team-container {
+  // For mobile devices
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $mobile) {
+    // For tablet devices
+    width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    // For small desktop devices
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    // For large desktop devices
+    width: 1200px;
+  }
+}
+
+.team-list {
+  margin: -15px;
+  
+}
+
+.emploee-card {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  width: calc(100% - 2 * 15px);
+  margin: 15px;
+
+  background-color: $aditional-text-color;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.17), 0px 1px 3px rgba(0, 0, 0, 0.15);
+  }
+
+  @media screen and (min-width: $mobile) {
+    // For tablet devices
+  }
+
+  @media screen and (min-width: $tablet) {
+    // For small desktop devices
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    // For large desktop devices
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+}
