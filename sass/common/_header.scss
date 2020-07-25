@@ -4,11 +4,11 @@
 
 .header-container {
   justify-content: center;
+  align-items: center;
 
   height: 60px;
 
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
 
   margin-left: auto;
   margin-right: auto;
@@ -21,7 +21,7 @@
     width: 768px;
     height: 80px;
 
-    display: flex;
+    display: inline-flex;
   }
 
   @media screen and (min-width: $desktop) {
@@ -30,7 +30,9 @@
 }
 
 .mobile-menu-button {
-  display: inline-flex;
+  position: absolute;
+  top: 5px;
+  right: 15px;
 
   margin: 0px;
 
@@ -58,10 +60,8 @@
 }
 
 .nav-address-container {
-  height: 453px;
-
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 45px;
 
   background-color: #fff;
   text-align: center;
@@ -71,8 +71,6 @@
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.02em;
-
-  border-top: 1px solid #ececec;
 
   @media screen and (max-width: $tablet - 1px) {
     display: none;
@@ -85,6 +83,8 @@
     &.is-open {
       display: block;
     }
+
+    border-top: 1px solid #ececec;
   }
 
   @media screen and (min-width: $tablet) {
@@ -94,11 +94,18 @@
 
     font-size: 14px;
     line-height: 16px;
+
+    border-bottom: 1px solid #ececec;
   }
 }
 
+.site-nav-list {
+  margin-bottom: 20px;
+}
+
 .site-nav-link {
-  display: inline-flex;
+  display: inline-block;
+
   margin-bottom: 40px;
 
   color: $title-text-color;
@@ -156,6 +163,10 @@
 }
 
 .header-address-link {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
   fill: $primary-text-color;
   color: $primary-text-color;
   text-decoration-line: none;

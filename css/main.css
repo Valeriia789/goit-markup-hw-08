@@ -25,9 +25,11 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -42,9 +44,9 @@ address {
   .header-container {
     width: 768px;
     height: 80px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
 }
 
@@ -55,9 +57,9 @@ address {
 }
 
 .mobile-menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  position: absolute;
+  top: 5px;
+  right: 15px;
   margin: 0px;
   padding: 0px;
   border: none;
@@ -83,9 +85,8 @@ address {
 }
 
 .nav-address-container {
-  height: 453px;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 45px;
   background-color: #fff;
   text-align: center;
   font-family: Roboto, sans-serif;
@@ -94,7 +95,6 @@ address {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.02em;
-  border-top: 1px solid #ececec;
 }
 
 @media screen and (max-width: 767px) {
@@ -104,6 +104,7 @@ address {
     top: 100%;
     left: 0;
     width: 100%;
+    border-top: 1px solid #ececec;
   }
   .nav-address-container.is-open {
     display: block;
@@ -118,13 +119,16 @@ address {
     margin-left: auto;
     font-size: 14px;
     line-height: 16px;
+    border-bottom: 1px solid #ececec;
   }
 }
 
+.site-nav-list {
+  margin-bottom: 20px;
+}
+
 .site-nav-link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   margin-bottom: 40px;
   color: #212121;
 }
@@ -199,6 +203,8 @@ address {
 }
 
 .header-address-link {
+  display: inline-block;
+  margin-bottom: 15px;
   fill: #757575;
   color: #757575;
   -webkit-text-decoration-line: none;
