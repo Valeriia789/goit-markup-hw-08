@@ -1,6 +1,39 @@
+.header {
+  position: relative;
+}
+
+.header-container {
+  justify-content: center;
+
+  height: 60px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+    height: 80px;
+
+    display: flex;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
+}
+
 .mobile-menu-button {
   display: inline-flex;
+
   margin: 0px;
+
   padding: 0px;
   border: none;
   background-color: transparent;
@@ -18,21 +51,128 @@
       display: none;
     }
   }
-}
 
-.header {
-  position: relative;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .nav-address-container {
-  background-color: pink;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
+  height: 453px;
 
-  &.is-open {
-    display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #fff;
+  text-align: center;
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+
+  border-top: 1px solid #ececec;
+
+  @media screen and (max-width: $tablet - 1px) {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    &.is-open {
+      display: block;
+    }
   }
-  
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+
+    margin-left: auto;
+
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.site-nav-link {
+  display: inline-flex;
+  margin-bottom: 40px;
+
+  color: $title-text-color;
+
+  @media screen and (min-width: $tablet) {
+    display: inline-flex;
+
+    margin-bottom: 0px;
+  }
+
+  &:active {
+    position: relative;
+
+    color: $accent-color;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      left: 0;
+
+      @media screen and (max-width: $tablet - 1px) {
+        top: 25px;
+      }
+
+      @media screen and (min-width: $tablet) {
+        bottom: 0;
+      }
+
+      display: block;
+      width: 100%;
+      height: 4px;
+
+      background-color: $accent-color;
+      border-radius: 2px;
+
+      animation-name: current-underline;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: 1;
+      animation-direction: alternate;
+      animation-delay: 0s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes current-underline {
+      from {
+        width: 0%;
+      }
+      to {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.header-address-link {
+  fill: $primary-text-color;
+  color: $primary-text-color;
+  text-decoration-line: none;
+  font-size: 18px;
+  line-height: 21px;
+  cursor: pointer;
+
+  @media screen and (min-width: $mobile) {
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }

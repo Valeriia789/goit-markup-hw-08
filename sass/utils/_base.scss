@@ -14,13 +14,14 @@
    margin: 0px;
  }
 
-// a {
-//   margin: 0px;
+a {
+  text-decoration-line: none;
+  text-decoration: none;
+}
 
-//   text-decoration-line: none;
-//   text-decoration: none;
-//   color: $aditional-text-color;
-// }
+address {
+  font-style: normal;
+}
 
 // h1,
 // h2,
