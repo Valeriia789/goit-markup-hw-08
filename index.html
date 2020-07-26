@@ -154,7 +154,12 @@
 
           <ul class="team-list">
             <li class="emploee-card">
-              <img src="./images/John.jpg" alt="John_Smith" class="emploee-image" width="270" height="260" />
+              <img
+                class="emploee-image"
+                srcset="./images/John-mobile1x.jpg 1x, ./images/John-mobile2x.jpg 2x"
+                src="./images/John-mobile1x.jpg"
+                alt="John_Smith"
+              />
               <h4 class="emploee-name">Николай Кучеренко</h4>
               <p class="emploee-position">Product Designer</p>
 
@@ -194,7 +199,12 @@
             </li>
 
             <li class="emploee-card">
-              <img src="./images/Marta.jpg" alt="Marta_Stewart" class="emploee-image" width="270" height="260" />
+              <img
+                class="emploee-image"
+                srcset="./images/Marta-mobile1x.jpg 1x, ./images/Marta-mobile2x.jpg 2x"
+                src="./images/Marta-mobile1x.jpg"
+                alt="Marta_Stewart"
+              />
               <h4 class="emploee-name">Ольга Иванова</h4>
               <p class="emploee-position">Frontend Developer</p>
 
@@ -234,7 +244,12 @@
             </li>
 
             <li class="emploee-card">
-              <img src="./images/Robert.jpg" alt="Robert_Jakis" class="emploee-image" width="270" height="260" />
+              <img
+                class="emploee-image"
+                srcset="./images/Robert-mobile1x.jpg 1x, ./images/Robert-mobile2x.jpg 2x"
+                src="./images/Robert-mobile1x.jpg"
+                alt="Robert_Jakis"
+              />
               <h4 class="emploee-name">Андрей Шевченко</h4>
               <p class="emploee-position">Marketing</p>
 
@@ -274,7 +289,12 @@
             </li>
 
             <li class="emploee-card">
-              <img src="./images/Martin.jpg" alt="Martin_Doe" class="emploee-image" width="270" height="260" />
+              <img
+                class="emploee-image"
+                srcset="./images/Martin-mobile1x.jpg 1x, ./images/Martin-mobile2x.jpg 2x"
+                src="./images/Martin-mobile1x.jpg"
+                alt="Martin_Doe"
+              />
               <h4 class="emploee-name">Иван Николаев</h4>
               <p class="emploee-position">UI Designer</p>
 
@@ -373,20 +393,20 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer-section">
       <div class="footer-container">
-        <div class="footer-address">
+        <div class="footer-logo">
           <span class="web-footer">Web</span>
           <span class="studio-footer">Studio</span>
-
-          <address class="footer-address-container">
-            <span class="location"> г. Киев, пр-т Леси Украинки, 26 </span>
-            <br />
-            <a class="footer-address-link" href="#mailto:info@devstudio.com">info@devstudio.com</a>
-            <br />
-            <a class="footer-address-link" href="#tel:+380961111111">+38-096-111-11-11</a>
-          </address>
         </div>
+
+        <address class="footer-address">
+          <ul class="footer-address-container">
+            <li footer-address-item><span class="location"> г. Киев, пр-т Леси Украинки, 26 </span></li>
+            <li footer-address-item><a class="footer-address-link" href="#mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li footer-address-item><a class="footer-address-link" href="#tel:+380961111111">+38-096-111-11-11</a></li>
+          </ul>
+        </address>
 
         <div class="join-us-container">
           <p class="join-text">Присоединяйтесь</p>
