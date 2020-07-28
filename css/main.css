@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body.modal-open {
+  overflow: hidden;
+}
+
 ul {
   list-style: none;
   -webkit-text-decoration-line: none;
@@ -15,6 +19,17 @@ a {
 
 address {
   font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .order-button,
@@ -935,5 +950,329 @@ address {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  /* ----вместо width: 100%; height: 100%; можно задать :----
+  bottom: 0px;
+  right: 0px;   */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+  opacity: 1;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  /*при скрытом элементе пропускает все клики через|мимо себя*/
+  /* когда backdrop спрятан, модальное окно тоже спрятано: */
+}
+
+.backdrop.is-hidden.popup {
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+          transform: translate(-50%, -50%) scale(0.9);
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 450px;
+  font-family: Roboto, sans-serif;
+  padding: 40px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 769px) {
+  .popup {
+    max-width: 528px;
+  }
+}
+
+.popup-close {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  cursor: pointer;
+}
+
+.popup-close:hover, .popup-close:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.popup-close:hover svg,
+.popup-close:focus svg {
+  fill: #2196f3;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+
+.popup-close .popup-close-icon {
+  position: absolute;
+  display: block;
+  width: 11px;
+  height: 11px;
+  fill: #212121;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+
+/* 
+  background-image: url(../images/checkbox-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: inherit;
+*/
+.popup-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #212121;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.popup-field {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.popup-field .popup-field-input {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+  padding-right: 18px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+  /* 
+   выбрать label, который идёт сразу за input, когда у того не показывается placeholder:
+   (+ стоит, потому что выбираем label, который стоит после input) 
+   */
+}
+
+.popup-field .popup-field-input:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.popup-field .popup-field-input:focus ~ .popup-field-label,
+.popup-field .popup-field-input:not(:placeholder-shown) ~ .popup-field-label {
+  -webkit-transform: translateY(-40px) translateX(15px);
+          transform: translateY(-40px) translateX(15px);
+  color: #2196f3;
+}
+
+.popup-field .popup-field-input:focus ~ .popup-icon {
+  fill: #2196f3;
+}
+
+.popup-field .popup-field-label {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  -webkit-transform: translateY(-50%) translateX(40px);
+          transform: translateY(-50%) translateX(40px);
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.popup-field .popup-icon {
+  position: absolute;
+  left: 19px;
+  /* top: 14px; */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
+}
+
+.popup-field .popup-field-textarea {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.popup-field .popup-field-textarea:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.popup-field .popup-field-textarea:focus ~ .textarea-field-label,
+.popup-field .popup-field-textarea:not(:placeholder-shown) ~ .textarea-field-label {
+  -webkit-transform: translateY(-40px) translateX(15px);
+          transform: translateY(-40px) translateX(15px);
+  color: #2196f3;
+}
+
+.popup-field .textarea-field-label {
+  position: absolute;
+  top: 15%;
+  left: 0px;
+  -webkit-transform: translateY(-50%) translateX(40px);
+          transform: translateY(-50%) translateX(40px);
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.accept-conditions {
+  width: 100%;
+  text-align: justify;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.accept-conditions .accept-conditions-checkbox {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 769px) {
+  .accept-conditions .accept-conditions-checkbox {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.accept-conditions .accept-conditions-checkbox .accept-conditions-box {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.accept-conditions .accept-conditions-checkbox .accept-conditions-box ~ .accept-conditions-text:before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+.accept-conditions .accept-conditions-checkbox .accept-conditions-box:checked ~ .accept-conditions-text:before {
+  background-color: #2196f3;
+  border-color: transparent;
+  background-image: url(../../images/checkbox-Vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: inherit;
+}
+
+.accept-conditions .accept-conditions-text {
+  color: #757575;
+}
+
+.accept-conditions .conditions-text {
+  color: #2196f3;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */
