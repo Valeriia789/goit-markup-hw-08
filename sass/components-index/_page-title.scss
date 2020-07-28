@@ -1,0 +1,19 @@
+.page-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  font-family: $font-main;
+  text-align: center;
+  color: $title-text-color;
+
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
