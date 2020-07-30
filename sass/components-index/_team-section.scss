@@ -1,4 +1,6 @@
 .team-section {
+  margin-bottom: 60px;
+
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -17,7 +19,6 @@
 
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px;
 
   font-size: 16px;
   line-height: 19px;
@@ -83,14 +84,25 @@
     width: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
-  
+
   .emploee-image {
     display: block;
     max-width: 100%;
+    height: auto;
     object-fit: cover;
 
     margin-top: 0px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: $tablet) {
+      width: 354px;
+      height: 260px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 270px;
+      height: 260px;
+    }
   }
 
   .emploee-name {
@@ -160,4 +172,3 @@
     }
   }
 }
-

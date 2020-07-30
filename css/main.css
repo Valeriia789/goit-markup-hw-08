@@ -104,10 +104,11 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   height: 60px;
-  padding: 15px;
   margin-left: auto;
   margin-right: auto;
+  padding: 15px;
 }
 
 @media screen and (min-width: 480px) {
@@ -120,9 +121,9 @@ address {
   .header-container {
     width: 768px;
     height: 80px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -130,6 +131,13 @@ address {
   .header-container {
     width: 1200px;
   }
+}
+
+.header-container .logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
 }
 
 .mobile-menu-button {
@@ -161,8 +169,12 @@ address {
 }
 
 .nav-address-container {
-  padding-top: 60px;
-  padding-bottom: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #fff;
   text-align: center;
   font-family: Roboto, sans-serif;
@@ -180,6 +192,8 @@ address {
     top: 100%;
     left: 0;
     width: 100%;
+    padding-top: 60px;
+    padding-bottom: 45px;
     border-top: 1px solid #ececec;
   }
   .nav-address-container.is-open {
@@ -192,15 +206,35 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
     font-size: 14px;
     line-height: 16px;
-    border-bottom: 1px solid #ececec;
   }
 }
 
 .site-nav-list {
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0px;
+    margin-right: 80px;
+  }
+  .site-nav-list .site-nav-item + .site-nav-item {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 305px;
+  }
 }
 
 .site-nav-link {
@@ -211,9 +245,9 @@ address {
 
 @media screen and (min-width: 768px) {
   .site-nav-link {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-bottom: 0px;
   }
 }
@@ -256,6 +290,7 @@ address {
 
 @media screen and (min-width: 768px) {
   .site-nav-link:active::after {
+    top: 44px;
     bottom: 0;
   }
 }
@@ -278,8 +313,28 @@ address {
   }
 }
 
+.header-address-list {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .header-address-list {
+    margin-bottom: -10px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-address-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: -30px;
+  }
+}
+
 .header-address-link {
-  display: inline-block;
+  display: block;
   margin-bottom: 15px;
   fill: #757575;
   color: #757575;
@@ -288,10 +343,18 @@ address {
   font-size: 18px;
   line-height: 21px;
   cursor: pointer;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-address-link:hover, .header-address-link:focus {
+  fill: #2196f3;
+  color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
   .header-address-link {
+    margin-bottom: 10px;
     font-size: 12px;
     line-height: 14px;
   }
@@ -299,8 +362,26 @@ address {
 
 @media screen and (min-width: 1200px) {
   .header-address-link {
+    margin-bottom: 0px;
+    margin-right: 30px;
     font-size: 14px;
     line-height: 16px;
+  }
+}
+
+.header-address-link .header-address-icon {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-address-link .header-address-icon {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-address-link .header-address-icon {
+    margin-right: 10px;
   }
 }
 
@@ -482,6 +563,18 @@ address {
   outline: none;
   background-color: #f5f4fa;
   border-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-container .subscribe-input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-container .subscribe-input {
+    width: 358px;
+  }
 }
 
 .hero-section {
@@ -762,6 +855,7 @@ address {
 }
 
 .team-section {
+  margin-bottom: 60px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f5f4fa;
@@ -779,7 +873,6 @@ address {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
@@ -857,10 +950,25 @@ address {
 .emploee-card .emploee-image {
   display: block;
   max-width: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   margin-top: 0px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .emploee-card .emploee-image {
+    width: 354px;
+    height: 260px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .emploee-card .emploee-image {
+    width: 270px;
+    height: 260px;
+  }
 }
 
 .emploee-card .emploee-name {
