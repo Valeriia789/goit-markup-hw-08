@@ -156,14 +156,17 @@
             <li class="emploee-card">
               <img
                 class="emploee-image"
-                srcset="./images/John-mobile1x.jpg 1x, 
-                ./images/John-mobile2x.jpg 2x, 
-                ./images/John-tablet1x.jpg 1x, 
-                ./images/John-tablet2x.jpg 2x, 
-                ./images/John-desktop1x.jpg 1x, 
-                ./images/John-desktop2x.jpg 2x"
-                src="./images/John-mobile1x.jpg,"
+                srcset="
+                ./images/John-desktop1x270w.jpg 270w,
+                ./images/John-tablet1x354w.jpg 354w,
+                ./images/John-mobile1xw450.jpg 450w,
+                ./images/John-desktop2x540w.jpg 540w,
+                ./images/John-tablet2x708w.jpg 708w,
+                ./images/John-mobile2xw900.jpg 900w"
+
+                src="./images/John-mobile1xw450.jpg"
                 alt="John_Smith"
+                sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, (min-width: 480) 100vw"
               />
               <h4 class="emploee-name">Николай Кучеренко</h4>
               <p class="emploee-position">Product Designer</p>

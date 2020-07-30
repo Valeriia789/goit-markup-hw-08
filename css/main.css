@@ -957,20 +957,6 @@ address {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
-  .emploee-card .emploee-image {
-    width: 354px;
-    height: 260px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .emploee-card .emploee-image {
-    width: 270px;
-    height: 260px;
-  }
-}
-
 .emploee-card .emploee-name {
   margin-top: 0px;
   margin-bottom: 10px;
