@@ -233,6 +233,9 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-right: 305px;
   }
 }
@@ -362,6 +365,15 @@ address {
 
 @media screen and (min-width: 1200px) {
   .header-address-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 0px;
     margin-right: 30px;
     font-size: 14px;
