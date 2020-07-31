@@ -89,20 +89,18 @@
     display: block;
     max-width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: inherit;
 
     margin-top: 0px;
     margin-bottom: 30px;
 
-    @media screen and (min-width: $tablet) {
+    // @media screen and (min-width: $tablet) {
       // width: 354px;
-      // height: 260px;
-    }
+    // }
 
-    @media screen and (min-width: $desktop) {
+    // @media screen and (min-width: $desktop) {
       // width: 270px;
-      // height: 260px;
-    }
+    // }
   }
 
   .emploee-name {

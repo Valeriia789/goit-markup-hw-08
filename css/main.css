@@ -951,8 +951,8 @@ address {
   display: block;
   max-width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: inherit;
+     object-fit: inherit;
   margin-top: 0px;
   margin-bottom: 30px;
 }
