@@ -412,6 +412,14 @@ address {
 @media screen and (min-width: 1200px) {
   .footer-container {
     width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 0px;
+    text-align: left;
   }
 }
 
@@ -441,6 +449,17 @@ address {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 768px) {
+  .address-joinus-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .footer-address-container {
   margin-bottom: 60px;
   display: block;
@@ -463,6 +482,12 @@ address {
 
 .join-us-container {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .join-us-container {
+    margin-left: 70px;
+  }
 }
 
 .join-us-container .join-text {
@@ -531,6 +556,12 @@ address {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: block;
+  }
+}
+
 .subscribe-form .subscribe-text {
   margin-top: 0px;
   margin-bottom: 20px;
@@ -543,11 +574,20 @@ address {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .subscribe-container .subscribe-input {
   width: 95%;
   height: 50px;
   padding: 15px 16px;
   margin-bottom: 20px;
+  margin-right: 10px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
