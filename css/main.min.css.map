@@ -16,7 +16,9 @@
         "../sass/components-index/_team-section.scss",
         "../sass/components-index/_customers-section.scss",
         "../sass/components-index/_page-title.scss",
-        "../sass/components-index/_backdrop-popup.scss"
+        "../sass/components-index/_backdrop-popup.scss",
+        "../sass/components-portfolio/_buttons-container.scss",
+        "../sass/components-portfolio/_portfolio-card-container.scss"
     ],
     "names": [],
     "file": "main.min.css"
