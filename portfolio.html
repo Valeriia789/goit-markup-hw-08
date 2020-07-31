@@ -15,38 +15,47 @@
   <body>
     <header class="header">
       <div class="header-container">
-        <a href="#"><img src="./images/WebStudio.jpg" class="logo-link" alt="Web Studio" /></a>
+        <a class="logo-link" href="#"><img src="./images/WebStudio.jpg" alt="Web Studio" /></a>
 
-        <nav class="site-nav-container">
-          <ul class="site-nav">
-            <li class="site-nav-item"><a href="./index.html" class="site-nav-link">Студия</a></li>
-            <li class="site-nav-item"><a href="./portfolio.html" class="site-nav-link-current">Портфолио</a></li>
-            <li class="site-nav-item"><a href="#" class="site-nav-link">Контакты</a></li>
-          </ul>
-        </nav>
+        <button type="button" class="mobile-menu-button" aria-expanded="false" aria-controls="nav-address-container" data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+            <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
 
-        <address class="header-address-container">
-          <ul class="header-address-list">
-            <li class="header-address-item">
-              <a class="header-address-link" href="#mailto:info@devstudio.com">
-                <svg class="header-address-icon envelope" width="16px" height="12px">
-                  <use href="./images/sprite.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="header-address-item">
-              <a class="header-address-link" href="#tel:+380961111111">
-                <svg class="header-address-icon phone" width="10px" height="15px">
-                  <use href="./images/sprite.svg#icon-phone"></use>
-                </svg>
-                +38-096-111-11-11
-              </a>
-            </li>
-          </ul>
-        </address>
+        <div class="nav-address-container" id="nav-address-container" data-menu>
+          <nav class="site-nav-container">
+            <ul class="site-nav-list">
+              <li class="site-nav-item"><a href="./index.html" class="site-nav-link">Студия</a></li>
+              <li class="site-nav-item"><a href="./portfolio.html" class="site-nav-link">Портфолио</a></li>
+              <li class="site-nav-item"><a href="#" class="site-nav-link">Контакты</a></li>
+            </ul>
+          </nav>
 
-        <!-- 
+          <address class="header-address-container">
+            <ul class="header-address-list">
+              <li class="header-address-item">
+                <a class="header-address-link" href="#mailto:info@devstudio.com">
+                  <svg class="header-address-icon envelope" width="16px" height="12px">
+                    <use href="./images/sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="header-address-item">
+                <a class="header-address-link" href="#tel:+380961111111">
+                  <svg class="header-address-icon phone" width="10px" height="15px">
+                    <use href="./images/sprite.svg#icon-phone"></use>
+                  </svg>
+                  +38-096-111-11-11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+      <!-- 
         <address class="address-container">
           <ul class="top-line-address">
             <li class="address-item"><a href="#mailto:info@devstudio.com" class="link">&#9993; info@devstudio.com</a></li>
@@ -54,7 +63,6 @@
           </ul>
         </address>
        -->
-      </div>
     </header>
 
     <main>
@@ -253,57 +261,59 @@
       </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer-section">
       <div class="footer-container">
-        <div class="footer-address">
-          <span class="web-footer">Web</span>
-          <span class="studio-footer">Studio</span>
+        <div class="address-joinus-container">
+          <address class="footer-address">
+            <div class="footer-logo">
+              <span class="web-footer">Web</span>
+              <span class="studio-footer">Studio</span>
+            </div>
 
-          <address class="footer-address-container">
-            <span class="location"> г. Киев, пр-т Леси Украинки, 26 </span>
-            <br />
-            <a class="footer-address-link" href="#mailto:info@devstudio.com">info@devstudio.com</a>
-            <br />
-            <a class="footer-address-link" href="#tel:+380961111111">+38-096-111-11-11</a>
+            <ul class="footer-address-container">
+              <li footer-address-item><span class="location"> г. Киев, пр-т Леси Украинки, 26 </span></li>
+              <li footer-address-item><a class="footer-address-link" href="#mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li footer-address-item><a class="footer-address-link" href="#tel:+380961111111">+38-096-111-11-11</a></li>
+            </ul>
           </address>
-        </div>
 
-        <div class="join-us-container">
-          <p class="join-text">Присоединяйтесь</p>
+          <div class="join-us-container">
+            <p class="join-text">Присоединяйтесь</p>
 
-          <ul class="join-social-list">
-            <li class="join-social-item">
-              <a class="join-social-link" href="#">
-                <svg class="join-social-icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
+            <ul class="join-social-list">
+              <li class="join-social-item">
+                <a class="join-social-link" href="#">
+                  <svg class="join-social-icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
 
-            <li class="join-social-item">
-              <a class="join-social-link" href="#">
-                <svg class="join-social-icon" width="20px" height="16px">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
+              <li class="join-social-item">
+                <a class="join-social-link" href="#">
+                  <svg class="join-social-icon" width="20px" height="16px">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
 
-            <li class="join-social-item">
-              <a class="join-social-link" href="#">
-                <svg class="join-social-icon" width="10px" height="20px">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
+              <li class="join-social-item">
+                <a class="join-social-link" href="#">
+                  <svg class="join-social-icon" width="10px" height="20px">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
 
-            <li class="join-social-item">
-              <a class="join-social-link" href="#">
-                <svg class="join-social-icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              <li class="join-social-item">
+                <a class="join-social-link" href="#">
+                  <svg class="join-social-icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <form class="subscribe-form">
@@ -320,7 +330,5 @@
         </form>
       </div>
     </footer>
-
-    <script src="./js/modal.js"></script>
   </body>
 </html>
