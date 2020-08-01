@@ -290,7 +290,7 @@
       &:checked ~ .accept-conditions-text:before {
         background-color: $accent-color;
         border-color: transparent;
-        background-image: url(../../images/checkbox-Vector.svg);
+        background-image: url("../../images/checkbox-Vector.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: inherit;

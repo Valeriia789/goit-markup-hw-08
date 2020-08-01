@@ -409,6 +409,8 @@ address {
 }
 
 .footer-container {
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-left: auto;
@@ -418,19 +420,19 @@ address {
 
 @media screen and (min-width: 480px) {
   .footer-container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .footer-container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-container {
-    width: 1200px;
+    max-width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -751,19 +753,19 @@ address {
 
 @media screen and (min-width: 480px) {
   .features-container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .features-container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .features-container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -857,30 +859,31 @@ address {
   letter-spacing: 0.03em;
 }
 
-.doings-container {
-  width: 1200px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 94px;
-}
-
 @media screen and (max-width: 1199px) {
   .doings-container {
     display: none;
   }
 }
 
-.doings-container .doings-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: -15px;
+@media screen and (min-width: 1200px) {
+  .doings-container {
+    max-width: 1200px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 94px;
+  }
+  .doings-container .doings-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -15px;
+  }
 }
 
 .doings-card {
@@ -962,19 +965,19 @@ address {
 
 @media screen and (min-width: 480px) {
   .team-container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .team-container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team-container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -1126,19 +1129,19 @@ address {
 
 @media screen and (min-width: 480px) {
   .customers-container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .customers-container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .customers-container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -1537,7 +1540,7 @@ address {
 .accept-conditions .accept-conditions-checkbox .accept-conditions-box:checked ~ .accept-conditions-text:before {
   background-color: #2196f3;
   border-color: transparent;
-  background-image: url(../../images/checkbox-Vector.svg);
+  background-image: url("../../images/checkbox-Vector.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: inherit;

@@ -3,6 +3,8 @@
 }
 
 .footer-container {
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -12,15 +14,15 @@
   text-align: center;
 
   @media screen and (min-width: $mobile) {
-    width: 480px;
+    max-width: 480px;
   }
 
   @media screen and (min-width: $tablet) {
-    width: 768px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
 
@@ -60,9 +62,6 @@
     display: flex;
     justify-content: space-evenly;
   }
-  
-  @media screen and (min-width: $desktop) {
-  }
 }
 
 .footer-address-container {
@@ -70,7 +69,7 @@
   display: block;
 
   // .footer-address-item:not(:last-child) {
-    // margin-top: 200px;
+  // margin-top: 200px;
   // }
   // Что с тобой не так? :
   // &:not(:last-child) {
@@ -82,12 +81,6 @@
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  
-  @media screen and (min-width: $tablet) {
-  }
-  
-  @media screen and (min-width: $desktop) {
-  }
 
   .location {
     color: $aditional-text-color;
@@ -101,10 +94,7 @@
 
 .join-us-container {
   margin-bottom: 60px;
-  
-  @media screen and (min-width: $tablet) {
-  }
-  
+
   @media screen and (min-width: $desktop) {
     margin-left: 70px;
   }
@@ -182,9 +172,9 @@
 }
 
 .subscribe-container {
-@media screen and (min-width: $desktop) {
-  display: flex;
-}
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
   .subscribe-input {
     width: 95%;
     height: 50px;
