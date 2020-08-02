@@ -1542,7 +1542,7 @@ address {
 .accept-conditions .accept-conditions-checkbox .accept-conditions-box:checked ~ .accept-conditions-text:before {
   background-color: #2196f3;
   border-color: transparent;
-  background-image: url(../../images/checkbox-Vector.svg);
+  background-image: url("../images/checkbox-vector.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: inherit;
