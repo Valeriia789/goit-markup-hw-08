@@ -699,14 +699,14 @@ address {
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("https://github.com/Valeriia789/goit-markup-hw-08/blob/master/images/Header-mob1x480w.jpg?raw=true");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("https://github.com/Valeriia789/goit-markup-hw-08/blob/master/images/Header-mob1x480w.jpg?raw=true");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("");
   background-size: cover;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero-section .hero-section {
-    background-image: url("https://github.com/Valeriia789/goit-markup-hw-08/blob/master/images/Header-mob2x960w.jpg?raw=true");
+    background-image: url("");
     background-size: cover;
   }
 }
@@ -714,15 +714,15 @@ address {
 @media screen and (min-width: 768px) {
   .hero-section {
     max-width: 768px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("https://github.com/Valeriia789/goit-markup-hw-08/blob/master/images/Header-tab1x768w.jpg?raw=true");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("https://github.com/Valeriia789/goit-markup-hw-08/blob/master/images/Header-tab1x768w.jpg?raw=true");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("");
     background-size: cover;
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-section .hero-section {
-    background-image: url("https://github.com/Valeriia789/goit-markup-hw-08/blob/master/images/Header-tab2x1536w.jpg?raw=true");
+    background-image: url("");
     background-size: cover;
   }
 }
@@ -732,15 +732,15 @@ address {
     max-width: 1600px;
     height: 600px;
     margin-bottom: 94px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("https://github.com/Valeriia789/goit-markup-hw-08/blob/master/images/Header-desk1x1600w.jpg?raw=true");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("https://github.com/Valeriia789/goit-markup-hw-08/blob/master/images/Header-desk1x1600w.jpg?raw=true");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("");
     background-size: cover;
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-section .hero-section {
-    background-image: url("https://github.com/Valeriia789/goit-markup-hw-08/blob/master/images/Header-desk2x3200w.jpg?raw=true");
+    background-image: url("");
     background-size: cover;
   }
 }
