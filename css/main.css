@@ -1,4 +1,10 @@
 @charset "UTF-8";
+body {
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+}
+
 body.modal-open {
   overflow: hidden;
 }
@@ -638,50 +644,6 @@ address {
   }
 }
 
-.hero-container {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: Roboto, sans-serif;
-  text-align: center;
-}
-
-@media screen and (min-width: 480px) {
-  .hero-container {
-    max-width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero-container {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-container {
-    max-width: 1200px;
-  }
-}
-
-.hero-container .hero-title {
-  margin-top: 0px;
-  margin-bottom: 30px;
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 42px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-container .hero-title {
-    font-size: 44px;
-    line-height: 60px;
-  }
-}
-
 .hero-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -745,6 +707,50 @@ address {
   }
 }
 
+.hero-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    max-width: 1200px;
+  }
+}
+
+.hero-container .hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container .hero-title {
+    font-size: 44px;
+    line-height: 60px;
+  }
+}
+
 .features-container {
   padding-left: 15px;
   padding-right: 15px;
@@ -786,20 +792,20 @@ address {
 }
 
 .feachers-item {
-  width: calc(100% - 2 * 15px);
+  max-width: calc(100% - 2 * 15px);
   margin: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .feachers-item {
-    width: calc((100% - 4 * 15px) / 2);
+    max-width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .feachers-item {
-    width: calc((100% - 8 * 15px) / 4);
+    max-width: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
 }
@@ -903,7 +909,7 @@ address {
 
 @media screen and (min-width: 1200px) {
   .doings-card {
-    width: calc((100% - 6 * 15px) / 3);
+    max-width: calc((100% - 6 * 15px) / 3);
     margin: 15px;
   }
 }
@@ -1005,7 +1011,7 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: calc(100% - 2 * 15px);
+  max-width: calc(100% - 2 * 15px);
   margin: 15px;
   font-family: Roboto, sans-serif;
   text-align: center;
@@ -1022,14 +1028,14 @@ address {
 
 @media screen and (min-width: 768px) {
   .emploee-card {
-    width: calc((100% - 4 * 15px) / 2);
+    max-width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .emploee-card {
-    width: calc((100% - 8 * 15px) / 4);
+    max-width: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
 }
@@ -1568,19 +1574,19 @@ address {
 
 @media screen and (min-width: 480px) {
   .buttons-container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .buttons-container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .buttons-container {
-    width: 1200px;
+    max-width: 1200px;
     margin-top: 94px;
     margin-bottom: 50px;
   }
@@ -1654,19 +1660,19 @@ address {
 
 @media screen and (min-width: 480px) {
   .portfolio-card-container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .portfolio-card-container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-card-container {
-    width: 1200px;
+    max-width: 1200px;
     margin-top: 0px;
     margin-bottom: 94px;
   }
